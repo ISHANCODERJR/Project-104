@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <title>Face recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://teachablemachine.withgoogle.com/models"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <center>
+        <h3 class="btn btn-default heading">Face Recognition</h3>
+
+        <br /><br />
+
+        <p style="font-size: 22px">
+          Model is trained to identify the following People:
+        </p>
+
+        <b class="name_of_People">
+          <hr>
+          Me
+          <hr>
+          Mother
+          <hr>
+          father
+          <hr>
+          Sister
+          <hr>
+        </b>
+
+        <label>Webcam View - </label>
+
+        <div id="camera"></div>
+
+        <br /><br />
+
+        <div id="result"></div>
+
+        <br /><br />
+
+        <button id="Snap" onclick="snapshot()" class="btn btn-info">Recognise Face</button>
+
+        <br /><br />
+
+        <button id="check" onclick="check()" class="btn btn-success">
+          Identify Face
+        </button>
+
+        <br /><br />
+
+        <p style="font-size: 22px">Person :</p>
+        <p style="font-size: 22px">Accuracy :</p>
+      </center>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
